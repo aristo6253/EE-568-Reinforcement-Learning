@@ -157,8 +157,8 @@ def plot_log_lines(list_to_plot, list_name, axis_label, folder, title, x_axis = 
         plt.savefig('../plot/log'+title+'.pdf')
 
 def plot_lines(list_to_plot, list_name, axis_label, folder, title, x_axis = None, show = False):
-    # plt.style.use('seaborn-v0_8')
-    plt.style.use('seaborn-darkgrid')
+    plt.style.use('seaborn-v0_8')
+    # plt.style.use('seaborn-darkgrid')
     n_iter = list_to_plot[0].size
     plt.figure()
     for _, item in enumerate(zip(list_to_plot, list_name)):
